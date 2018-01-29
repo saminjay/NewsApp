@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings">
+
+    <ListPreference
+        android:defaultValue="newest"
+        android:entries="@array/order_by_labels"
+        android:entryValues="@array/order_by_values"
+        android:key="@string/order_by_key"
+        android:title="@string/order_by_title" />
+
+    <EditTextPreference
+        android:defaultValue="Hacking"
+        android:inputType="text"
+        android:key="@string/query_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/query_title" />
+
+</PreferenceScreen>
